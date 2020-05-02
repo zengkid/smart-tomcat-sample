@@ -1,3 +1,4 @@
 # Project exclude paths
-/service/target/
-/web/target/
+.idea
+*.iml
+target
