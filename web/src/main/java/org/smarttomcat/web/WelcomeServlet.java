@@ -5,6 +5,8 @@ import org.smarttomcat.service.MyServeiceImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -44,7 +46,16 @@ public class WelcomeServlet extends HttpServlet {
 
         }
 
+    }
 
 
+    @PostConstruct
+    public void init() {
+        System.out.println("init bean called..........");
+    }
+
+    @PreDestroy
+    public void destory() {
+        System.out.println("destory bean called..........");
     }
 }
