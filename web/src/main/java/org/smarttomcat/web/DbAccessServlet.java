@@ -63,7 +63,6 @@ public class DbAccessServlet extends HttpServlet {
                             writer.write("</td>");
                         }
                         writer.write("</th>");
-                        System.out.println();
                         while (rs.next()) {
                             writer.write("<tr>");
                             for (int i = 0; i < columnCount; i++) {
