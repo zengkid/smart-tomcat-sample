@@ -5,28 +5,24 @@ import org.slf4j.LoggerFactory;
 
 import javax.naming.Context;
 import javax.naming.InitialContext;
-import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.sql.DataSource;
-import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.Statement;
-import java.util.Map;
-import java.util.Set;
 
 @WebServlet("/db")
 
 public class DbAccessServlet extends HttpServlet {
-    private Logger logger = LoggerFactory.getLogger(DbAccessServlet.class);
+    private final Logger logger = LoggerFactory.getLogger(DbAccessServlet.class);
 
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse res) {
         logger.info("starting request....");
 
 
