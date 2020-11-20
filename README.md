@@ -5,4 +5,4 @@ The sample project is in order to verify the [SmartTomcat](https://plugins.jetbr
  4. create run/debug
  
 
-if you are using tomcat10, please change branch tomcat10.
+if you are using tomcat10, please change branch [Tomcat10](https://github.com/zengkid/smart-tomcat-sample/tree/tomcat10 "Tomcat10").
