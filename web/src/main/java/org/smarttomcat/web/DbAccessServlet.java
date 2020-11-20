@@ -1,14 +1,14 @@
 package org.smarttomcat.web;
 
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.naming.Context;
 import javax.naming.InitialContext;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import javax.sql.DataSource;
 import java.io.PrintWriter;
 import java.sql.Connection;
@@ -17,7 +17,6 @@ import java.sql.ResultSetMetaData;
 import java.sql.Statement;
 
 @WebServlet("/db")
-
 public class DbAccessServlet extends HttpServlet {
     private final Logger logger = LoggerFactory.getLogger(DbAccessServlet.class);
 
