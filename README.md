@@ -4,3 +4,5 @@ The sample project is in order to verify the [SmartTomcat](https://plugins.jetbr
  3. install and config tomcat setting
  4. create run/debug
  
+
+if you are using tomcat10, please change branch tomcat10.
